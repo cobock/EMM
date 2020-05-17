@@ -17,36 +17,31 @@ public class ButtonBehaviour : MonoBehaviour, IVirtualButtonEventHandler
         {
             case "up":
                 Debug.Log("up");
-                player.transform.position = transform.position + new Vector3(-10, 0, 0);
+                //player.transform.position = transform.position + new Vector3(-10, 0, 0);
+                player.transform.Translate(0, -5, 0);
                 break;
             case "left":
                 Debug.Log("left");
-                w = w + 0.05f;
+                //w = w + 0.05f;
 
-                targetDirection = new Vector3(Mathf.Sin(w), 0, Mathf.Cos(w));
-                targetRotation = Quaternion.LookRotation(targetDirection);
-                player.transform.rotation = targetRotation;
-
+                //targetDirection = new Vector3(Mathf.Sin(w), 0, Mathf.Cos(w));
+                //targetRotation = Quaternion.LookRotation(targetDirection);
+                //player.transform.rotation = targetRotation;
+                player.transform.Rotate(0, 0, 5);
                 break;
             case "right":
                 Debug.Log("right");
-                w = w - 0.05f;
+                //w = w - 0.05f;
 
-                targetDirection = new Vector3(Mathf.Sin(w), 0, Mathf.Cos(w));
-                targetRotation = Quaternion.LookRotation(targetDirection);
-                player.transform.rotation = targetRotation;
+                //targetDirection = new Vector3(Mathf.Sin(w), 0, Mathf.Cos(w));
+                //targetRotation = Quaternion.LookRotation(targetDirection);
+                //player.transform.rotation = targetRotation;
+                player.transform.Rotate(0,0,-5);
                 break;
-            case "downX":
-                Debug.Log("downX");
-                player.transform.position = transform.position + new Vector3(20, 0, 0);
-                break;
-            case "downY":
-                Debug.Log("downY");
-                player.transform.position = transform.position + new Vector3(0, 20, 0);
-                break;
-            case "downZ":
-                Debug.Log("downZ");
-                player.transform.position = transform.position + new Vector3(0, 0, 20);
+            case "down":
+                Debug.Log("down");
+                //player.transform.position = transform.position + new Vector3(0, 20, 0);
+                player.transform.Translate(0, 5, 0);
                 break;
         }
     }
