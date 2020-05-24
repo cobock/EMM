@@ -32,7 +32,9 @@ public class MenuManagerScript2 : MonoBehaviour
     public void restartGame()
     {
         Debug.Log("restart");
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        //SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene().name);
+        SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().name);
+
     }
 
     public void returnToGame()
