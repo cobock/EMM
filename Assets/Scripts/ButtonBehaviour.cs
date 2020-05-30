@@ -9,6 +9,7 @@ public class ButtonBehaviour : MonoBehaviour, IVirtualButtonEventHandler
     private Quaternion targetRotation;
     private float w;
     public GameObject player;
+    public int step;
 
 
     public void OnButtonPressed(VirtualButtonBehaviour vb)
@@ -17,31 +18,19 @@ public class ButtonBehaviour : MonoBehaviour, IVirtualButtonEventHandler
         {
             case "up":
                 Debug.Log("up");
-                //player.transform.position = transform.position + new Vector3(-10, 0, 0);
-                player.transform.Translate(0, -5, 0);
+                player.transform.Translate(0, -step, 0);
                 break;
             case "left":
                 Debug.Log("left");
-                //w = w + 0.05f;
-
-                //targetDirection = new Vector3(Mathf.Sin(w), 0, Mathf.Cos(w));
-                //targetRotation = Quaternion.LookRotation(targetDirection);
-                //player.transform.rotation = targetRotation;
-                player.transform.Rotate(0, 0, 5);
+                player.transform.Rotate(0, 0, step);
                 break;
             case "right":
                 Debug.Log("right");
-                //w = w - 0.05f;
-
-                //targetDirection = new Vector3(Mathf.Sin(w), 0, Mathf.Cos(w));
-                //targetRotation = Quaternion.LookRotation(targetDirection);
-                //player.transform.rotation = targetRotation;
-                player.transform.Rotate(0,0,-5);
+                player.transform.Rotate(0,0,-step);
                 break;
             case "down":
                 Debug.Log("down");
-                //player.transform.position = transform.position + new Vector3(0, 20, 0);
-                player.transform.Translate(0, 5, 0);
+                player.transform.Translate(0, step, 0);
                 break;
         }
     }
@@ -55,10 +44,10 @@ public class ButtonBehaviour : MonoBehaviour, IVirtualButtonEventHandler
     void Start()
     {
         w = 0;
-        //SearchforallChildrenfromthisImageTargetwithtypeVirtualButtonBehaviour
+        //Search for all Children from this ImageTarget with type VirtualButtonBehaviour
         VirtualButtonBehaviour[] vbs = GetComponentsInChildren<VirtualButtonBehaviour>();
         for( int i = 0; i < vbs.Length; ++i){
-            //RegisterwiththevirtualbuttonsTrackableBehaviour
+            //Register with the virtualbuttons TrackableBehaviour
             vbs[i].RegisterEventHandler(this);}
     }
 
