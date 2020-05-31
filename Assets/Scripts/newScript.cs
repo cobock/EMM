@@ -15,9 +15,9 @@ public class newScript : MonoBehaviour
 
         for (int i = 0; i<=anzahl; i++)
         {
-         Transform prefab =  Instantiate(myPrefab, new Vector3(UnityEngine.Random.Range(-10f, 10f), 0f, UnityEngine.Random.Range(-10f, 10f)), myPrefab.rotation);
-            prefab.GetComponent<ColorScript>().color = color;
-            Debug.Log("Prefab color: " + prefab.GetComponent<ColorScript>().color);
+        // Transform prefab =  Instantiate(myPrefab, new Vector3(UnityEngine.Random.Range(-10f, 10f), 0f, UnityEngine.Random.Range(-10f, 10f)), myPrefab.rotation);
+        //    prefab.GetComponent<ColorScript>().color = color;
+        //    Debug.Log("Prefab color: " + prefab.GetComponent<ColorScript>().color);
         }
         
     }
