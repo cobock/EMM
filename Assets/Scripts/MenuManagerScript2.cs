@@ -18,7 +18,7 @@ public class MenuManagerScript2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
             Menu.SetActive(!Menu.activeSelf);
         }
@@ -32,7 +32,6 @@ public class MenuManagerScript2 : MonoBehaviour
     public void restartGame()
     {
         Debug.Log("restart");
-        //SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene().name);
         SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().name);
 
     }

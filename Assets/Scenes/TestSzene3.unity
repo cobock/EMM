@@ -154,7 +154,6 @@ MonoBehaviour:
   myPrefab: {fileID: 7482661274657526803, guid: 15907aadd18183641834c28ecda5266f,
     type: 3}
   anzahl: 5
-  color: {r: 0.13363299, g: 0.22215971, b: 0.7264151, a: 0}
 --- !u!4 &198955144
 Transform:
   m_ObjectHideFlags: 0
@@ -724,8 +723,8 @@ GameObject:
   - component: {fileID: 1230288263}
   - component: {fileID: 1230288262}
   - component: {fileID: 1230288261}
-  - component: {fileID: 1230288264}
   - component: {fileID: 1230288265}
+  - component: {fileID: 1230288264}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -792,7 +791,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1230288260}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10, y: 1, z: -10}
+  m_LocalPosition: {x: -5.13, y: 1, z: -9.43}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -807,7 +806,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1230288260}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6134472a4ccfb9b44901fd83e2f80ac9, type: 3}
+  m_Script: {fileID: 11500000, guid: beca640551ba8e74e91599f0f2467da5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1155536551}
