@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 7482661274657526803}
   - component: {fileID: 114297049209486534}
   - component: {fileID: 7020490612216081221}
-  - component: {fileID: 5536962955506568661}
   m_Layer: 0
   m_Name: SphereCube
   m_TagString: Untagged
@@ -87,19 +86,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &5536962955506568661
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 99327099033846719}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7366d861db9ced847a9ed2bc4383ccbc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &6081482496082039635
 GameObject:
   m_ObjectHideFlags: 0
@@ -297,7 +283,6 @@ GameObject:
   - component: {fileID: 1043726273006383054}
   - component: {fileID: 8808984192387335731}
   - component: {fileID: 2101316046519710843}
-  - component: {fileID: 2710825688970451258}
   m_Layer: 0
   m_Name: New VFX
   m_TagString: Untagged
@@ -397,15 +382,3 @@ VFXRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &2710825688970451258
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7132892658218200307}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74d8f5843d8061c469850fe3ead554da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
